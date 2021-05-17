@@ -1,0 +1,60 @@
+package p1;
+
+import java.util.Scanner;
+
+public class Bank {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		for (int i = 0; i < 3; i++) {
+			System.out.println("enter the pin number:");
+			int pinNumber = s.nextInt();
+			if (pinNumber == 1234) {
+				System.out.println("welcome");
+				break;
+			} else {
+				System.out.println("invalid pin number.");
+			}
+			if (i == 2) {
+				System.out.println("card is blocked");
+
+			}
+		}
+	String condition="yes";
+	while(condition.equals("yes")){
+		System.out.println("enter the amount:");
+		String amount=s.next();
+		System.out.println("plz collect the amount:"+amount);
+		System.out.println("Do u want to continue(yes/no)?");
+		 condition = s.next();
+		if (condition.equals("no"))
+		{
+			System.out.println("Thank you");
+		}
+		}
+	}
+	
+}
+
+
+===========================================================================================
+ OUTPUT :
+
+enter the pin number:
+123
+invalid pin number.
+enter the pin number:
+1234
+welcome
+enter the amount:
+500
+plz collect the amount:500
+Do u want to continue(yes/no)?
+yes
+enter the amount:
+788
+plz collect the amount:788
+Do u want to continue(yes/no)?
+no
+Thank you
