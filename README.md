@@ -1,0 +1,2 @@
+# BankTransactions
+When we go to ATM machine, we insert a card which will ask for pinNumber. If you enter valid correct pin,it should display WELCOME msg and it will allow you to withdraw the cash. After withdrawing the money , it will ask as " do you want to continue the transaction". If yes then again you may withdraw the amount. If you enter the pin wrong for consecutive 3 times,it should display the msg as CARD IS BLOCKED..
